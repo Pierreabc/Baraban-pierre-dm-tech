@@ -1,16 +1,13 @@
-function inverser(mot){
+function reverseCaractere(caractere) {
 
+    var sortieC = "";
 
-    var decomposition = mot.split(""); 
-    var inversement = decomposition.reverse(); 
+    for (var i = caractere.length - 1; i >= 0; i--) {
 
+        sortieC += caractere[i];
 
-    var nouveaumot = inversement.join(""); 
-    console.log(nouveaumot)
-
-    return nouveaumot;
     }
     
-
-
-    inverser("ordinateur")
+    return sortieC;
+}
+console.log(reverseCaractere('miam'));
